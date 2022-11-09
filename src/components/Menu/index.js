@@ -6,9 +6,9 @@ const Menu = () => {
     return (
         <>
             <Nav>
-                <h1>Custo de React JS</h1>
-                <LinkNav active={true} href="#">Departamentos</LinkNav>
-                <LinkNav active={false} href="#">Add Departamento</LinkNav>
+                <LinkNav to="/"><h1>Custo de React JS</h1></LinkNav>
+                <LinkNav  to="/departamentos">Departamentos</LinkNav>
+                <LinkNav to="/departamentos/new">Add Departamento</LinkNav>
             </Nav>
         </>
     )

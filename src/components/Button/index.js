@@ -1,13 +1,14 @@
 import React from 'react';
-import {ButtonR} from './styles.js';
+import {Container} from './styles.js';
 
-const Button = ({onClick, children}, props) => {
+const Button = ({onClick, children, variant}) => {
     return (
         <>
-        <ButtonR onClick={onClick}>
-            {children}
-        </ButtonR>
-        variant: {props.variant}
+        <Container 
+            onClick={onClick}
+            variant={variant}>
+            {children}            
+        </Container>
         </>
     )
 }
